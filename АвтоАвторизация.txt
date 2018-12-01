@@ -1,0 +1,1 @@
+http://localhost/modules/auth.php?login=qwerty&password=qwerty&submit=Вход

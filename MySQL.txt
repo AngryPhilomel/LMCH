@@ -1,0 +1,19 @@
+CREATE TABLE `admin_db`.`users`(
+    `id` INT(10) NOT NULL AUTO_INCREMENT,
+    `login` VARCHAR(70) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+    `password` VARCHAR(70) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+    `name` VARCHAR(70) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+    `lastRead` INT(10) NOT NULL,
+	`department` VARCHAR(20) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+    PRIMARY KEY(`id`)
+    
+) ENGINE = InnoDB CHARSET = utf8 COLLATE utf8_general_ci;
+
+
+
+CREATE TABLE `admin_db`.`commonmessages`(
+    `id` INT(10) NOT NULL AUTO_INCREMENT,
+    `userid` INT(10) NOT NULL,
+    `messages` TEXT CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+    PRIMARY KEY(`id`)
+) ENGINE = InnoDB CHARSET = utf8 COLLATE utf8_general_ci;
